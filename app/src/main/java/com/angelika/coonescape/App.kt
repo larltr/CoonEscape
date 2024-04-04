@@ -2,7 +2,7 @@ package com.angelika.coonescape
 
 import android.app.Application
 import android.content.Context
-import com.angelika.rickmortyapi.utils.MusicManager
+import com.angelika.coonescape.ui.utils.MusicManager
 
 class App : Application() {
 

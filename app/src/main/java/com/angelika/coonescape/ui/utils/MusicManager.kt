@@ -1,4 +1,4 @@
-package com.angelika.rickmortyapi.utils
+package com.angelika.coonescape.ui.utils
 
 import android.content.Context
 

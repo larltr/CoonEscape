@@ -11,7 +11,7 @@ import com.angelika.coonescape.R
 import com.angelika.coonescape.databinding.FragmentThemeBinding
 import com.angelika.coonescape.ui.activity.MainActivity
 import com.angelika.coonescape.ui.utils.ThemeManager
-import com.angelika.rickmortyapi.utils.MusicManager
+import com.angelika.coonescape.ui.utils.MusicManager
 
 class ThemeFragment : Fragment(R.layout.fragment_theme) {
 

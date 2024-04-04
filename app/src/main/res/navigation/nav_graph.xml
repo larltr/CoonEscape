@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.angelika.coonescape.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_menuFragment_to_themeFragment"
+            app:destination="@id/themeFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_descriptionFragment2"
+            app:destination="@id/descriptionFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.angelika.coonescape.ui.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_gameFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_gameFragment_to_pauseFragment"
+            app:destination="@id/pauseFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.angelika.coonescape.ui.fragments.ThemeFragment"
+        android:label="fragment_theme"
+        tools:layout="@layout/fragment_theme" />
+
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.angelika.coonescape.ui.fragments.DescriptionFragment"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description">
+
+        <action
+            android:id="@+id/action_descriptionFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/descriptionFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.angelika.coonescape.ui.fragments.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over">
+
+        <action
+            android:id="@+id/action_gameOverFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/gameOverFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_gameOverFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/gameOverFragment"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pauseFragment"
+        android:name="com.angelika.coonescape.ui.fragments.PauseFragment"
+        android:label="fragment_pause"
+        tools:layout="@layout/fragment_pause">
+
+        <action
+            android:id="@+id/action_pauseFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+
+    </fragment>
+
+</navigation>
